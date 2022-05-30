@@ -1,0 +1,833 @@
+body {
+    background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+    background-size: 300% 300%;
+    -webkit-animation: Background 25s ease infinite;
+    -moz-animation: Background 25s ease infinite;
+    animation: Background 25s ease infinite;
+  }
+  
+  @-webkit-keyframes Background {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  @-moz-keyframes Background {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  @keyframes Background {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  .full-screen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(https://i.imgur.com/wCG2csZ.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    /* works with row or column */
+    
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .intro {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    letter-spacing: -2px;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  }
+  
+ /* ---------------------------------------- */
+  
+  
+/* login buttons home page */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+/*
+ FORMATTING FOR CODEPEN
+*/
+
+
+div[class*=container] {
+  text-align: center;
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+ BUTTON STYLING
+*/
+
+.btn1 {
+  position: relative;
+  color: white;
+  width: 256px;
+  height: 64px;
+  line-height: 64px;
+  transition: all 0.3s;
+  align-content: center;
+  top: 600px;
+  right: 200px;
+  text-decoration: none;
+}
+
+.btn1::before, .btn1::after {
+  content: '';
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.btn-one::before {
+  left: 4px;
+  z-index: 1;
+  
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(0.1, 1);
+}
+
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn-one::after {
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-one:hover::after {
+  transform: scale(1, .1);
+  opacity: 0;
+}
+/* ------------------------------------------------------------------------------- */
+    
+ /* create acount buttons home page */
+ .btn2 {
+  position: relative;
+  color: white;
+  width: 256px;
+  height: 64px;
+  line-height: 64px;
+  transition: all 0.3s;
+  top: 535px;
+  left: 200px;
+  text-decoration: none;
+}
+
+.btn2::before, .btn2::after {
+  content: '';
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.btn-two::before, .btn-two::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-two:hover::after {
+  animation-name: rotatecw;
+  animation-duration: 2s;
+}
+.btn-two:hover::before {
+  animation-name: rotateccw; 
+  animation-duration: 3s;
+}
+.btn-two:hover::after, .btn-two:hover::before {
+  left: 96px;
+  width: 64px;
+  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* log in buttons account page */
+.btn3 {
+  position: relative;
+  color: white;
+  width: 256px;
+  height: 64px;
+  line-height: 64px;
+  transition: all 0.3s;
+  top: 580px;
+  text-decoration: none;
+  
+}
+
+.btn3::before, .btn3::after {
+  content: '';
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.btn-three::before, .btn-three::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-three:hover::after {
+  animation-name: rotatecw;
+  animation-duration: 2s;
+}
+.btn-three:hover::before {
+  animation-name: rotateccw; 
+  animation-duration: 3s;
+}
+.btn-three:hover::after, .btn-three:hover::before {
+  left: 96px;
+  width: 64px;
+  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatecw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotateccw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+/* ------------------------------------------------------------------------------- */
+
+
+
+
+
+
+  .button-line:hover {
+    opacity: 1;
+  }
+  p {
+    font-family: Meiryo, "Hiragino Kaku Gothic Pro W3",sans-serif;
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+  }
+
+.navbar {
+    font-size: 20px;
+    top: 0;
+    left: 0;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 60px;
+    color:white;
+    transition: 0.3s ease;
+    position: relative;
+    left: 310px;
+    
+    
+}
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .nav-link.active{
+    color:white;
+    border-bottom: 1px inset white;
+    border-radius: 0px 0px 40px 40px;
+}
+/* animation för Button "PLAY" */
+/* ----------------------------------------------------------------------------------- */
+html, body {
+    height: 100%;
+  }
+
+  .playwrap {
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s ease;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .playbutton {
+    top: 60px;
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    
+    }
+  
+  .playbutton::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .playbutton:hover, .playbutton:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .playbutton:hover::before, .playbutton:focus::before {
+    opacity: 1;
+  }
+  
+  .playbutton::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .playbutton:hover::after, .playbutton:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  /* ----------------------------------------------------------------------------------- */
+
+#home{
+    
+    width: 1500px;
+    height: 700px;
+    background-size: auto;
+    background-position:top 100px center ;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+
+#home span{
+    color: burlywood;
+    font-size: 70px;
+    font-style: initial;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title {
+    position: relative;
+    right: -75px;
+    top: 100px;
+    margin-left: 100px;
+    margin-top: 200px;
+    color:white;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.title-c{
+    display: flex;
+    opacity: 0;
+    animation: revealText .5s forwards;
+
+}
+
+.title-c2{
+    animation-delay: .175s;
+    position: relative;
+    left: 100px;
+    
+}
+
+.title-c3{
+    animation-delay: .25s;
+}
+
+.title-c4{
+    animation-delay: .32s;
+    position: relative;
+    left: 100px;
+}
+@keyframes revealText {
+    from{
+        transform: translate(20px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
+/* ======================== */
+/* 
+    övergripande sidbakgrund/teckensnittsstilar/centrerande innehåll).
+*/
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.icons-wrapper{
+    top: 250px;
+    left: 500px;
+    position: relative;
+    place-content: center;
+}
+
+.icons-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 5px;
+    background-color:white;
+    border-radius: 10px;
+    left: 17%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+/* ======================== */
+.icon{
+    cursor: pointer;
+    display: inline-block; /*Gör ikonerna inline blocknivåelement. Detta låter oss animera transformegenskapen.*/
+    font-size: 100px;
+    animation: float 3s ease-in-out infinite; /*Tillämpar flytande keyframe-animering över 5s och får den att köras oändligt.*/
+}
+
+/*
+    Följande stilar kommer att lägga till linjär gradientbakgrund till texten och sedan klipper den in textformen i bakgrunden.
+    Resultatet är gradienttext.
+*/
+.ri-instagram-line{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   /* Detta är det första objektet så ingen animeringsfördröjning behövs.*/
+}
+
+.ri-facebook-circle-line{
+    color: #1877f2;
+    animation-delay: 1s; /* Lägger till en animeringsfördröjning på 1 sekund.*/
+}
+.ri-reddit-line{
+    color: orange;
+    animation-delay: 2s; /* Lägger till en animeringsfördröjning på 2 sekund.*/
+    
+}
+.ri-whatsapp-line{
+    color: #25d366;
+    animation-delay: 3s; /* Lägger till en animeringsfördröjning på 3 sekund.*/
+}
+.ri-youtube-line{
+    color: red;
+    animation-delay: 4s; /* Lägger till en animeringsfördröjning på 4 sekund.*/
+    
+}
+
+
+@keyframes float {
+    0%{
+        transform: translateY(0); /*Startpunkten för animationen är 0.*/
+    }
+    50%{
+        transform: translateY(-15px); /*Animeringens mittpunkt är -15xp. Detta kommer att flytta elementet uppåt.*/
+    }
+    100%{
+        transform: translateY(0); 
+    }
+    150%{
+        transform: translateY(-15px); 
+    }
+    200%{
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------search bar--------------------------------------  */
+
+input[type=search] {
+  display:block;
+  left:55%;
+  position:absolute;
+  top:20%;
+}
+
+input[type=search]{
+    border:solid 3px #fff;
+    box-sizing:border-box;
+    font-size:1em;
+    height:2em;
+    margin-left:-15vw;
+    outline:solid #fc0 0;
+    padding:.5em;
+    transition:all 0.1s ease-in;
+    width:250px;
+    z-index:1;   
+    border-radius: 1000px;   
+}
+input[type=search]:focus{
+       
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease;
+  
+}
+input[type=search]:hover{
+  width:500px;
+  font-size:2em;
+}
+/* ---------------------------------------------------................................................................... */
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+/* ----------------------------Log in--------------------------------------  */
+/* ---------------------------------------------------................................................................... */
+  * {box-sizing: border-box}
+
+/* style the container */
+.container1 {
+  position: relative;
+  border-radius: 5px;
+  padding: 20px 0 30px 0;
+  top: 200px;
+
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* adds appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col4 {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 200px;
+  margin-top: 6px;
+}
+
+/* Two-column layout */
+.col5 {
+  
+  padding: 0 500px;
+  margin-top: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+/* log in buttons account page */
+.btn3 {
+  position: relative;
+  color: white;
+  width: 256px;
+  height: 64px;
+  line-height: 64px;
+  transition: all 0.3s;
+  top: 600px;
+  
+}
+
+.btn3::before, .btn3::after {
+  content: '';
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.btn-three::before, .btn-three::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-three:hover::after {
+  animation-name: rotatecw;
+  animation-duration: 2s;
+}
+.btn-three:hover::before {
+  animation-name: rotateccw; 
+  animation-duration: 3s;
+}
+.btn-three:hover::after, .btn-three:hover::before {
+  left: 96px;
+  width: 64px;
+  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-100%);
+  border: 2px solid rgb(117, 117, 117);
+  height: 500px;
+  bottom: 0px;
+  background-color:black;;
+  transform: rotate(90deg)
+}
+
+.v4-headline {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  letter-spacing: -2px;
+  bottom: 500px;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  position: relative;
+}
+.full-screen1 {
+ position: static;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(https://i.imgur.com/wCG2csZ.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  /* works with row or column */
+  
+  flex-direction: column;
+  -webkit-align-items: center;
+  
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.v2{
+  color: wheat;
+  bottom: 236px;
+  left: 750px;
+  background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+  backdrop-filter: blur(30px);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-size: 11px;
+  
+  
+  justify-content: center }
+  div.v2 {
+  margin: 0 }
+  
+}
+
+
+
+
+/* ---------------------------------------------------................................................................... */
+
+/* ---------------------------------------------------................................................................... */
+
+
+
+
